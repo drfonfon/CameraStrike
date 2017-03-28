@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageStackLayout">
+        <attr name="isl_maxCount" format="integer"/>
+        <attr name="isl_count" format="integer"/>
+        <attr name="isl_image" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleButton">
+        <attr name="cb_color" format="color" />
+        <attr name="cb_pressedRingWidth" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/generate"
+            style="@style/BlueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/generate"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/loginText"
+            style="@style/BlueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/scan_you_code"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:rowCount="2"
+            android:columnCount="2">
+
+            <com.fonfon.camerastrike.lib.CircleButton
+                android:id="@+id/create_match"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                app:cb_pressedRingWidth="16dip"
+                app:cb_color="@color/amber"
+                app:srcCompat="@drawable/ic_shoot"
+                />
+
+            <com.fonfon.camerastrike.lib.CircleButton
+                android:id="@+id/connect"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/app_name"
+                app:cb_pressedRingWidth="16dip"
+                app:cb_color="@color/deep_purple"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_death"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/create"
+                android:textSize="18sp"
+                android:fontFamily="monospace"
+                android:layout_margin="8dp"
+                android:gravity="center"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/connect"
+                android:textSize="18sp"
+                android:layout_margin="8dp"
+                android:fontFamily="monospace"
+                android:gravity="center"/>
+
+        </GridLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deathmatch"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <com.fonfon.camerastrike.lib.CircleButton
+                android:id="@+id/training_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/app_name"
+                app:cb_pressedRingWidth="16dip"
+                app:cb_color="@color/green"
+                app:srcCompat="@drawable/ic_target"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/training"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

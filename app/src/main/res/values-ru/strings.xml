@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Офисный шутер</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Необходим доступ к камере для обнаружения лиц и кодов.</string>
+    <string name="permission_write_rationale">Необходим доступ к памяти для сохранения кода.</string>
+    <string name="no_camera_permission">Приложение не может быть запущено, так как отсутствует разрашение для камеры.</string>
+    <string name="low_storage_error">Детектор не может быть загружен из-за малого количества памяти.</string>
+    <string name="training">Тренировка</string>
+    <string name="deathmatch">Игра на выживание</string>
+    <string name="scan_you_code">Сканируйте ваш код, для авторизации</string>
+    <string name="match_scan_text">Сканируйте код матча</string>
+    <string name="wait_opponents">Ожидайте противников</string>
+    <string name="you_died">Вы убиты</string>
+    <string name="you_alive">Вы выжили</string>>
+    <string name="first_authorize">Авторизуйтесь перед матчем</string>
+    <string name="cancel">Отмена</string>
+    <string name="create">Создать</string>
+    <string name="connect">Подключиться</string>
+    <string name="start">start</string>
+    <string name="connected">Подключено: %d</string>
+    <string name="help">Help</string>
+    <string name="generate">Генерировать код</string>
+    <string name="your_code">Your code</string>
+    <string name="training_message">Чтобы удачно попасть в AZTEC код, нужно стрелять когда прицел позеленеет.</string>
+</resources>

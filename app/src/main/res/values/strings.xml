@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CameraStrike</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">We need access to your camera to detect faces and codes.</string>
+    <string name="permission_write_rationale">Requires access to the memory for storing code.</string>
+    <string name="no_camera_permission">The application can not be started because there is no permission for the camera.</string>
+    <string name="low_storage_error">The detector can not be loaded due to the small amount of memory.</string>
+    <string name="training">Training</string>
+    <string name="deathmatch">Death Match</string>
+    <string name="scan_you_code">Scan your code to log in</string>
+    <string name="match_scan_text">Scan the match code</string>
+    <string name="wait_opponents">Expect opponents</string>
+    <string name="you_died">You are killed</string>
+    <string name="you_alive">You survived</string>>
+    <string name="first_authorize">Log in before the match</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="connect">Connect</string>
+    <string name="start">start</string>
+    <string name="connected">Connected: %d</string>
+    <string name="help">Help</string>
+    <string name="generate">Generate code</string>
+    <string name="your_code">Your code</string>
+    <string name="training_message">Shoot on AZTEC codes.\nHit when the aim turns green.</string>
+</resources>

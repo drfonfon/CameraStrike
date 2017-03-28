@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#009ADE</color>
+    <color name="primary">#2B3C88</color>
+
+    <color name="blue">#2196F3</color>
+    <color name="green">#4CAF50</color>
+    <color name="amber">#FFC107</color>
+    <color name="deep_purple">#673AB7</color>
+
+    <color name="ugreen">#8BC34A</color>
+    <color name="ured">#F44336</color>
+
+</resources>

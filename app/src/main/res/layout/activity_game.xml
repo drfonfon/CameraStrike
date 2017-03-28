@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="presenter"
+            type="com.fonfon.camerastrike.ui.game.GameViewModel" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:orientation="vertical">
+
+        <com.fonfon.camerastrike.camera.CameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/bang"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="36dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_bang_bang" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/aim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:isActive="@{presenter.activeAim != null}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.fonfon.camerastrike.lib.ImageStackLayout
+                android:id="@+id/hearts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:count="@{presenter.hearts}"
+                app:isl_image="@drawable/ic_heart"
+                app:isl_maxCount="8" />
+
+            <com.fonfon.camerastrike.lib.ImageStackLayout
+                android:id="@+id/bullets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:count="@{presenter.bullets}"
+                app:isl_image="@drawable/ic_bullet"
+                app:isl_maxCount="6" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:visibility="@{presenter.bullets == 0 ? View.VISIBLE : View.GONE}"
+            android:layout_gravity="bottom|center_horizontal"
+            app:srcCompat="@drawable/ic_shake" />
+
+    </FrameLayout>
+</layout>
